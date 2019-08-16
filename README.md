@@ -2,7 +2,9 @@
 ## punktfiler - dotfiles
 
 `mkdir ~/.v/ && cd ~/.v`
+
 `sh i.sh`
+
 Vim: `:PlugInstall`
 
 

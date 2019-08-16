@@ -18,8 +18,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 # ZSH Common
 wget -O $ZSH_CUSTOM/themes/common.zsh-theme https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme
 
-git clone https://github.com/victorberland/.v.git
 cd .v
-
 chsh -s /bin/zsh
 bashdot install v
