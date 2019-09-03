@@ -21,3 +21,10 @@ wget -O $ZSH_CUSTOM/themes/common.zsh-theme https://raw.githubusercontent.com/ja
 cd .v
 chsh -s /bin/zsh
 bashdot install v
+
+
+# suckless
+cd ~/.v/suckless/dwm
+sudo make clean install
+cd ~/.v/suckless/st
+sudo make clean install
