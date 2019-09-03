@@ -1,10 +1,10 @@
 [user]
 	name = Victor Berland
 	email = vb@victorberland.com
-	signingKey = FF45FD1C6DA064D5281C48210D8729B1B0E640ED
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg2
+#	signingKey = FF45FD1C6DA064D5281C48210D8729B1B0E640ED
+#[commit]
+	#gpgsign = true
+#[gpg]
+#	program = gpg2
 [alias]
 	pusha = !git remote | xargs -L1 git push --all

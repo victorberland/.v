@@ -11,6 +11,12 @@ sudo xbps-install -y dmenu font-inconsolata-otf adwaita-icon-theme
 sudo xbps-install -y tmux nodejs docker docker-compose
 sudo ln -s /etc/sv/docker /var/service/
 sudo usermod -aG docker $USER
+npm install -g browser-sync
+
+# div
+# youtube-dl
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
 
 cd ~
 
