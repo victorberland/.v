@@ -1,0 +1,13 @@
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+
+while true; do
+	getDate() {
+		currentTime=`date +"%d-%m %H:%M"`
+		echo $currentTime
+	}
+	xsetroot -name "  $(getDate)  "
+	sleep 1
+done &
+
+~/.fehbg &
+exec dwm
