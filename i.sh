@@ -5,7 +5,7 @@ sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel
 
 # x, dwm, st
 sudo xbps-install -y xorg xterm pango feh
-sudo xbps-install -y dmenu font-inconsolata-otf adwaita-icon-theme
+sudo xbps-install -y font-inconsolata-otf adwaita-icon-theme
 
 # dev
 sudo xbps-install -y tmux nodejs docker docker-compose
@@ -45,4 +45,6 @@ bashdot install v
 cd ~/.v/suckless/dwm
 sudo make clean install
 cd ~/.v/suckless/st
+sudo make clean install
+cd ~/.v/suckless/dmenu
 sudo make clean install
