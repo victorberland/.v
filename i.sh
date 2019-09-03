@@ -4,7 +4,7 @@ sudo xbps-install -Su git vim curl wget
 sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel
 
 # x, dwm, st
-sudo xbps-install -y xorg xterm pango
+sudo xbps-install -y xorg xterm pango feh
 sudo xbps-install -y dmenu font-inconsolata-otf adwaita-icon-theme
 
 # dev
