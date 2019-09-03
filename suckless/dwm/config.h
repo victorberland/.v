@@ -1,24 +1,26 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int barsize	= 10;		/* Bar Size */
+static const unsigned int barsize	= 20;		/* Bar Size */
 static const unsigned int borderpx	= 0;		/* border pixel of windows */
 static const unsigned int snap		= 8;		/* snap pixel */
 static const int showbar		= 1;		/* 0 means no bar */
 static const int topbar			= 1;		/* 0 means bottom bar */
-static const char *fonts[]		= { "DejaVu Sans Mono:size=10" };
-static const char dmenufont[]		= "DejaVu Sans Mono:size=10";
+/*static const char *fonts[]		= { "DejaVu Sans Mono:size=10" };
+static const char dmenufont[]		= "DejaVu Sans Mono:size=10";*/
+static const char *fonts[]		= { "Inconsolata:size=12" };
+static const char dmenufont[]		= "Inconsolata:size=12";
 
 static const char col_gray1[]		= "#111111";
 static const char col_gray2[]		= "#444444";
 static const char col_gray3[]		= "#bbbbbb";
 static const char col_gray4[]		= "#eeeeee";
-/*static const char col_green1[]		= "#000D0A";*/
+static const char col_green1[]		= "#000D0A";
 static const char col_green2[]		= "#01261C";
 static const char *colors[][3]		= {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_green2,  col_gray2  },
+	[SchemeNorm] = { col_gray3, col_green1, col_gray1 },
+	[SchemeSel]  = { col_gray4, col_green1,  col_gray2  },
 };
 
 /* tagging */
