@@ -1,7 +1,10 @@
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+xrdb $HOME/.Xresources
+start-pulseaudio-x11 &
+setxkbmap no
 
 while true; do
 	getDate() {
+		acpi
 		currentTime=`date +"%d-%m %H:%M"`
 		echo $currentTime
 	}

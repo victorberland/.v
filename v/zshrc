@@ -50,6 +50,10 @@ alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 alias tempus='~/tempus/tempus'
 alias serve='browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000'
 
+alias sleep='sudo pm-suspend'
+alias volmin='amixer -q sset Master 5%-'
+alias volplus='amixer -q sset Master 5%+'
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 

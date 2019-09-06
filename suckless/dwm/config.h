@@ -1,15 +1,15 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int barsize	= 20;		/* Bar Size */
+static const unsigned int barsize	= 40;		/* Bar Size */
 static const unsigned int borderpx	= 0;		/* border pixel of windows */
 static const unsigned int snap		= 8;		/* snap pixel */
 static const int showbar		= 1;		/* 0 means no bar */
 static const int topbar			= 1;		/* 0 means bottom bar */
 /*static const char *fonts[]		= { "DejaVu Sans Mono:size=10" };
 static const char dmenufont[]		= "DejaVu Sans Mono:size=10";*/
-static const char *fonts[]		= { "Inconsolata:size=12" };
-static const char dmenufont[]		= "Inconsolata:size=12";
+static const char *fonts[]		= { "Inconsolata:size=14" };
+static const char dmenufont[]		= "Inconsolata:size=14";
 
 static const char col_gray1[]		= "#111111";
 static const char col_gray2[]		= "#444444";
