@@ -5,7 +5,7 @@ sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel
 setxkbmap no
 
 # x, dwm, st
-sudo xbps-install -y xorg xterm pango feh acpi pm-utils
+sudo xbps-install -y xorg xterm pango feh acpi pm-utils xbindkeys
 sudo xbps-install -y font-inconsolata-otf adwaita-icon-theme
 
 # audio

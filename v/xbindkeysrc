@@ -1,0 +1,22 @@
+
+
+
+# Increase volume
+"amixer sset 'Master' 5%+ && sh ~/.s/bar.sh"
+	XF86AudioRaiseVolume
+
+# Decrease volume
+"amixer sset 'Master' 5%- && sh ~/.s/bar.sh"
+	XF86AudioLowerVolume
+
+# Mute volume
+"amixer sset 'Master' 0% && sh ~/.s/bar.sh"
+	XF86AudioMute
+
+# Increase backlight
+"xbacklight -inc 10"
+	XF86MonBrightnessUp
+
+# Decrease backlight
+"xbacklight -dec 10"
+	XF86MonBrightnessDown

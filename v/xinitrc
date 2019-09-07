@@ -1,15 +1,18 @@
 xrdb $HOME/.Xresources
 start-pulseaudio-x11 &
 setxkbmap no
+xbindkeys
+
+
+amixer set Master unmute
+amixer set Master 40
+amixer set Headphone unmute
+amixer set Headphone 100%
+amixer set Speaker 0
 
 while true; do
-	getDate() {
-		acpi
-		currentTime=`date +"%d-%m %H:%M"`
-		echo $currentTime
-	}
-	xsetroot -name "  $(getDate)  "
 	sleep 1
+	sh ~/.s/bar.sh
 done &
 
 ~/.fehbg &

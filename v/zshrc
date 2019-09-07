@@ -50,6 +50,9 @@ alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 alias tempus='~/tempus/tempus'
 alias serve='browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000'
 
+alias xi='sudo xbps-install -Su'
+alias xr='sudo xbps-remove -R'
+
 alias sleep='sudo pm-suspend'
 alias volmin='amixer -q sset Master 5%-'
 alias volplus='amixer -q sset Master 5%+'
