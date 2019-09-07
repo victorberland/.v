@@ -56,3 +56,5 @@ cd ~/.v/suckless/st
 sudo make clean install
 cd ~/.v/suckless/dmenu
 sudo make clean install
+cd ~/.v/suckless/slock
+sudo make clean install

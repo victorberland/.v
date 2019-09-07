@@ -60,7 +60,7 @@ alias status='
 alias xi='sudo xbps-install -Su'
 alias xr='sudo xbps-remove -R'
 
-alias sleep='sudo pm-suspend'
+alias sleep='sudo pm-suspend && slock'
 alias volmin='amixer -q sset Master 5%-'
 alias volplus='amixer -q sset Master 5%+'
 
