@@ -50,6 +50,13 @@ alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 alias tempus='~/tempus/tempus'
 alias serve='browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000'
 
+alias status='
+	echo "---- V ----"
+	echo "----------"
+	acpi
+	echo "----------"
+	free -m
+	'
 alias xi='sudo xbps-install -Su'
 alias xr='sudo xbps-remove -R'
 

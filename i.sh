@@ -1,7 +1,7 @@
 
 # init
 sudo xbps-install -Suy git vim curl wget zsh
-sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel
+sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel libXrandr-devel
 setxkbmap no
 
 # x, dwm, st

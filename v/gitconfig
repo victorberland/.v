@@ -8,3 +8,5 @@
 #	program = gpg2
 [alias]
 	pusha = !git remote | xargs -L1 git push --all
+[credential]
+	helper = store
