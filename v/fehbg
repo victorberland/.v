@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/v/.v/b/paul-gilmore-KT3WlrL_bsg-unsplash.jpg'
+feh --no-fehbg --bg-scale '/home/v/.v/b/red-1.jpg' 
