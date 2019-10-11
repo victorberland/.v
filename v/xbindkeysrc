@@ -20,3 +20,6 @@
 # Decrease backlight
 "xbacklight -dec 10"
 	XF86MonBrightnessDown
+
+"scrot && notify-send '<3'"
+	XF86Switch_VT_8
