@@ -44,11 +44,14 @@ export EDITOR='vim'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+#
+export DOKKU_HOST=x.v4.is
 
 # alias
 alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 alias tempus='~/tempus/tempus'
 alias serve='browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000'
+alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
 alias status='
 	echo "---- V ----"
