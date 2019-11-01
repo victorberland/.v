@@ -4,6 +4,7 @@ getPower() {
 getVolume() {
 	#amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]'
 	amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]%'
+	echo ""
 }
 getDate() {
 	currentTime=`date +"%d-%m %H:%M"`
