@@ -6,7 +6,7 @@ setxkbmap no
 
 # x, dwm, st
 sudo xbps-install -y xorg xterm pango feh acpi pm-utils xbindkeys
-sudo xbps-install -y font-inconsolata-otf adwaita-icon-theme
+sudo xbps-install -y font-inconsolata-otf adwaita-icon-theme font-awesome
 
 # audio
 sudo xbps-install -y alsa-utils pulseaudio ConsoleKit2
@@ -16,15 +16,17 @@ sudo ln -s /etc/sv/cgmanager /var/service/
 sudo ln -s /etc/sv/consolekit /var/service/
 
 # dev
-sudo xbps-install -y tmux nodejs docker docker-compose
+sudo xbps-install -y tmux nodejs docker docker-compose filezilla
 sudo ln -s /etc/sv/docker /var/service/
 sudo usermod -aG docker $USER
-npm install -g browser-sync
+npm install -g browser-sync gulp
 
 # div
 # youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
+
+sudo xbps-install -y owncloudclient firefox thunderbird keepassxc scrot neofetch
 
 cd ~
 
