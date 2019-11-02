@@ -3,8 +3,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin()
-"Plug 'drewtempelmeyer/palenight.vim'
-Plug 'victorberland/gran'
+Plug 'drewtempelmeyer/palenight.vim'
+"Plug 'victorberland/gran'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'fxn/vim-monochrome'
 Plug 'posva/vim-vue'
@@ -60,7 +60,7 @@ let html_no_rendering=1
 syntax on
 colo pablo
 set background=dark
-colorscheme gran
+colorscheme palenight
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

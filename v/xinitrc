@@ -3,12 +3,7 @@ start-pulseaudio-x11 &
 setxkbmap no 
 xbindkeys
 
-
-amixer set Master unmute
-amixer set Master 40
-amixer set Headphone unmute
-amixer set Headphone 100%
-amixer set Speaker 0
+alsactl --file ~/.v/asound.state restore
 
 while true; do
 	sleep 1

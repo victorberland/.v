@@ -11,11 +11,11 @@ static const char dmenufont[]		= "DejaVu Sans Mono:size=10";*/
 static const char *fonts[]		= { "Inconsolata:size=13" };
 static const char dmenufont[]		= "Inconsolata:size=13";
 
-static const char col_gray1[]		= "#111111";
+static const char col_gray1[]		= "#1B0F1C";
 static const char col_gray2[]		= "#888888";
-static const char col_gray3[]		= "#aaaaaa";
-static const char col_gray4[]		= "#dddddd";
-static const char col_col1[]		= "#241D1D";
+static const char col_gray3[]		= "#6D6887";
+static const char col_gray4[]		= "#f0f0f0";
+static const char col_col1[]		= "#1B0F1C";
 static const char col_green2[]		= "#01261C";
 static const char *colors[][3]		= {
 	/*               fg         bg         border   */
