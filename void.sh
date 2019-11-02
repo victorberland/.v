@@ -5,7 +5,7 @@ sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel libX
 setxkbmap no
 
 # x, dwm, st
-sudo xbps-install -y xorg xterm pango feh acpi pm-utils xbindkeys
+sudo xbps-install -y xorg xterm pango feh acpi pm-utils xbindkeys upower
 sudo xbps-install -y font-inconsolata-otf adwaita-icon-theme font-awesome
 
 # audio
@@ -26,7 +26,7 @@ npm install -g browser-sync gulp
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
-sudo xbps-install -y owncloudclient firefox thunderbird keepassxc scrot neofetch
+sudo xbps-install -y owncloudclient firefox thunderbird keepassxc scrot neofetch ffmpeg
 
 cd ~
 
@@ -60,3 +60,5 @@ cd ~/.v/suckless/dmenu
 sudo make clean install
 cd ~/.v/suckless/slock
 sudo make clean install
+
+git config credential.helper store
