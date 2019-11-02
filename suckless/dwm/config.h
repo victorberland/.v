@@ -12,9 +12,9 @@ static const char *fonts[]		= { "Inconsolata:size=13" };
 static const char dmenufont[]		= "Inconsolata:size=13";
 
 static const char col_gray1[]		= "#111111";
-static const char col_gray2[]		= "#444444";
-static const char col_gray3[]		= "#bbbbbb";
-static const char col_gray4[]		= "#eeeeee";
+static const char col_gray2[]		= "#888888";
+static const char col_gray3[]		= "#aaaaaa";
+static const char col_gray4[]		= "#dddddd";
 static const char col_col1[]		= "#241D1D";
 static const char col_green2[]		= "#01261C";
 static const char *colors[][3]		= {
@@ -24,7 +24,7 @@ static const char *colors[][3]		= {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -41,9 +41,10 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
-	/* symbol     arrange function */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[]=",      tile },    /* first entry is default */
+	/* symbol     arrange function
+	{ "><>",      NULL },   * no layout function means floating behavior */
+	{ "",      NULL },    /* no layout function means floating behavior */
+	{ "",      tile },    /* first entry is default */
 	{ "[M]",      monocle },
 };
 

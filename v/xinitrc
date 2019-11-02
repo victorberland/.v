@@ -1,7 +1,7 @@
-xrdb $HOME/.Xresources
-start-pulseaudio-x11 &
-setxkbmap no
-xbindkeys
+#xrdb $HOME/.Xresources
+#start-pulseaudio-x11 &
+#setxkbmap no
+#xbindkeys
 
 
 amixer set Master unmute
@@ -16,4 +16,5 @@ while true; do
 done &
 
 ~/.fehbg &
-exec dwm
+#exec dwm
+exec gnome
