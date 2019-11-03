@@ -3,7 +3,7 @@
 
 `git clone https://github.com/victorberland/.v.git && cd ~/.v`
 
-`sh i.sh`
+Void Linux: `sh void.sh`
 
 Vim: `:PlugInstall`
 
