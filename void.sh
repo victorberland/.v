@@ -19,14 +19,14 @@ sudo ln -s /etc/sv/consolekit /var/service/
 sudo xbps-install -y tmux nodejs docker docker-compose filezilla
 sudo ln -s /etc/sv/docker /var/service/
 sudo usermod -aG docker $USER
-npm install -g browser-sync gulp
+sudo npm install -g browser-sync gulp
 
 # div
 # youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
-sudo xbps-install -y owncloudclient firefox thunderbird keepassxc scrot neofetch ffmpeg
+sudo xbps-install -y owncloudclient firefox thunderbird keepassxc scrot neofetch ffmpeg lm_sensors
 
 cd ~
 

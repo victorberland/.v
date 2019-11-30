@@ -7,7 +7,7 @@
  */
 /*static char *font = "DejaVu Sans Mono:pixelsize=13:antialias=true:autohint=true";*/
 static char *font = "Inconsolata:pixelsize=32:antialias=true:autohint=true";
-static int borderpx = 42;
+static int borderpx = 52;
 
 /*
  * What program is execed by st depends of these precedence rules:

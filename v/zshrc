@@ -1,4 +1,4 @@
-export TERM=xterm
+export TERM=xterm-256color
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -73,18 +73,8 @@ alias volplus='amixer -q sset Master 5%+'
 alias untar='tar -zxvf'
 alias webcam='guvcview'
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# alias stripe='docker run --rm -it stripe/stripe-cli'
+alias stripe='docker run -it stripe/stripe-cli'
 
-
-
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
-
-# Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
-
-# To add support for TTYs this line can be optionally added.
-source ~/.cache/wal/colors-tty.sh
+export PATH="$PATH:$HOME/.npm-packages/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
