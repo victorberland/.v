@@ -6,6 +6,7 @@ call plug#begin()
 "Plug 'drewtempelmeyer/palenight.vim'
 Plug 'victorberland/gran'
 Plug 'shapeoflambda/dark-purple.vim'
+"Plug 'scrooloose/nerdtree'
 "Plug 'owickstrom/vim-colors-paramount'
 "Plug 'fxn/vim-monochrome'
 Plug 'posva/vim-vue'
@@ -70,7 +71,23 @@ let mapleader="\<Space>"
 nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <F4> :Texplore<cr>
+"map <F4> :NERDTreeToggle<CR>
 nnoremap <F3> :Goyo<cr>
+
+" Open NERDTree if no file specified
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+" NERDTree settings
+"let g:NERDTreeMinimalUI = 1
+"let g:NERDTreeShowHidden = 1
+"let g:NERDTreeShowLineNumbers = 0
+"let g:NERDTreeCascadeSingleChildDir = 0
+"let g:NERDTreeDirArrowExpandable = "•"
+"let g:NERDTreeDirArrowCollapsible = "•"
+"let g:NERDTreeWinSize = 31
+"let NERDTreeMapOpenInTab='\r'
 
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
