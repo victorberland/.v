@@ -4,11 +4,8 @@
 
 call plug#begin()
 "Plug 'drewtempelmeyer/palenight.vim'
-Plug 'victorberland/gran'
-Plug 'shapeoflambda/dark-purple.vim'
+"Plug 'victorberland/gran'
 "Plug 'scrooloose/nerdtree'
-"Plug 'owickstrom/vim-colors-paramount'
-"Plug 'fxn/vim-monochrome'
 Plug 'posva/vim-vue'
 Plug 'junegunn/goyo.vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -62,8 +59,10 @@ let html_no_rendering=1
 syntax on
 colo pablo
 set background=dark
-"colorscheme dark_purple
-colorscheme gran
+"colorscheme gran
+"colorscheme palenight
+"colorscheme monochrome
+colorscheme zellner
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
