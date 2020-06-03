@@ -1,7 +1,8 @@
 
 # init
-sudo xbps-install -Suy git vim curl wget zsh
-sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel libXrandr-devel
+sudo xbps-install -y void-repo-nonfree
+sudo xbps-install -Suy git vim curl wget zsh htop
+sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel libXrandr-devel os-prober
 setxkbmap no
 
 # x, dwm, st
@@ -19,14 +20,14 @@ sudo ln -s /etc/sv/consolekit /var/service/
 sudo xbps-install -y tmux nodejs docker docker-compose filezilla
 sudo ln -s /etc/sv/docker /var/service/
 sudo usermod -aG docker $USER
-sudo npm install -g browser-sync gulp
+sudo npm install -g browser-sync
 
-# div
 # youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
-sudo xbps-install -y nextcloud-client firefox thunderbird keepassxc scrot neofetch ffmpeg lm_sensors vlc NetworkManager
+# div
+sudo xbps-install -y nextcloud-client qtkeychain-qt5 firefox thunderbird keepassxc scrot neofetch ffmpeg lm_sensors vlc NetworkManager ranger w3m-img pandoc libreoffice spotify ffmpeg
 
 cd ~
 
@@ -48,7 +49,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 
 # ZSH Common
-wget -O $ZSH_CUSTOM/themes/common.zsh-theme https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme
+wget -O ~/.oh-my-zsh/themes/common.zsh-theme https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme
 
 
 # suckless
