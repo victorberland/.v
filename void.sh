@@ -1,44 +1,81 @@
+# .v
 
-# init
+
+cd ~
+
+
+
 sudo xbps-install -y void-repo-nonfree
-sudo xbps-install -Suy git vim curl wget zsh htop
-sudo xbps-install -y base-devel libX11-devel libXft-devel libXinerama-devel libXrandr-devel os-prober
+sudo xbps-install -Suy \
+	git \
+	vim \
+	curl \
+	wget \
+	zsh \
+	htop \
+	base-devel \
+	libX11-devel libXft-devel libXinerama-devel libXrandr-devel xorg xterm pango xbindkeys \
+	os-prober \
+	feh \
+	acpi \
+	upower \
+	font-inconsolata-otf \
+	font-awesome
+	alsa-utils pulseaudio \
+	ConsoleKit2 \
+	tmux \
+	nodejs \
+	docker docker-compose \
+	filezilla \
+	timewarrior \
+	nextcloud-client qtkeychain-qt5 \
+	firefox icecat thunderbird \
+	keepassxc \
+	scrot neofetch ffmpeg lm_sensors \
+	vlc cmus \
+	NetworkManager \
+	ranger w3m-img \
+	libreoffice \
+	stow
+
+
+
+
+git clone https://github.com/void-linux/void-packages.git
+cd void-packages
+./xbps-src binary-bootstrap
+
+./xbps-src pkg spotify discord
+
+
+
 setxkbmap no
 
-# x, dwm, st
-sudo xbps-install -y xorg xterm pango feh acpi xbindkeys upower
-sudo xbps-install -y font-inconsolata-otf adwaita-icon-theme font-awesome
 
 # audio
-sudo xbps-install -y alsa-utils pulseaudio ConsoleKit2
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/cgmanager /var/service/
 sudo ln -s /etc/sv/consolekit /var/service/
 
+
+
 # dev
-sudo xbps-install -y tmux nodejs docker docker-compose filezilla
 sudo ln -s /etc/sv/docker /var/service/
 sudo usermod -aG docker $USER
 sudo npm install -g browser-sync
+
+
 
 # youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
+
 # div
-sudo xbps-install -y nextcloud-client qtkeychain-qt5 firefox thunderbird keepassxc scrot neofetch ffmpeg lm_sensors vlc NetworkManager ranger w3m-img pandoc libreoffice spotify ffmpeg
-
-cd ~
-
-# bashdot
-curl -s https://raw.githubusercontent.com/bashdot/bashdot/master/bashdot > /tmp/bashdot
-sudo mv /tmp/bashdot /usr/local/bin
-sudo chmod a+x /usr/local/bin/bashdot
-
-cd .v
+cd ~/.v
 chsh -s /bin/zsh
-bashdot install v
+stow v
 
 
 # Vim Plug
@@ -46,7 +83,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # Oh My ZSH
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
 
 # ZSH Common
 wget -O ~/.oh-my-zsh/themes/common.zsh-theme https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme

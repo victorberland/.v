@@ -22,7 +22,7 @@
 	XF86MonBrightnessDown
 
 # Screenshot
-"scrot && notify-send '<3'"
+"scrot -s && notify-send '<3'"
 	XF86Switch_VT_8
 
 # Sleep
