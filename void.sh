@@ -89,13 +89,13 @@ wget -O ~/.oh-my-zsh/themes/common.zsh-theme https://raw.githubusercontent.com/j
 
 
 # suckless
-cd ~/.v/suckless/dwm
+cd ~/.v/dwm
 sudo make clean install
-cd ~/.v/suckless/st
+cd ~/.v/st
 sudo make clean install
-cd ~/.v/suckless/dmenu
+cd ~/.v/dmenu
 sudo make clean install
-cd ~/.v/suckless/slock
+cd ~/.v/slock
 sudo make clean install
 
 git config credential.helper store
