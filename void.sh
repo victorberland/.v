@@ -1,10 +1,6 @@
 # .v
 
 
-cd ~
-
-
-
 sudo xbps-install -y void-repo-nonfree
 sudo xbps-install -Suy \
 	git \
@@ -39,6 +35,7 @@ sudo xbps-install -Suy \
 	stow
 
 
+cd ~
 
 
 git clone https://github.com/void-linux/void-packages.git
@@ -47,6 +44,7 @@ cd void-packages
 
 ./xbps-src pkg spotify discord
 
+cd ~
 
 
 setxkbmap no
@@ -64,7 +62,6 @@ sudo ln -s /etc/sv/consolekit /var/service/
 sudo ln -s /etc/sv/docker /var/service/
 sudo usermod -aG docker $USER
 sudo npm install -g browser-sync
-
 
 
 # youtube-dl
