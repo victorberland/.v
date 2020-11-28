@@ -8,6 +8,7 @@ Void Linux: `sh void.sh`
 Vim: `:PlugInstall`
 
 `sudo visudo` - `v ALL=NOPASSWD:/bin/zzz`
+
 `crontab -e` - `*/3 * * * * /bin/bash /home/v/.s/bat.sh >/dev/null 2>&1`
 
 `/etc/default/grub` - `GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4 slub_debug=P page_poison=1 nouveau.modeset=0 iommu=off mitigations=off"`
