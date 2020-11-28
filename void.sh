@@ -9,8 +9,9 @@ sudo xbps-install -Suy \
 	wget \
 	zsh \
 	htop \
-	base-devel \
+	base-devel xtools \
 	libX11-devel libXft-devel libXinerama-devel libXrandr-devel xorg xterm pango xbindkeys \
+	mesa-vulkan-intel intel-video-accel \
 	os-prober \
 	feh \
 	acpi \
@@ -41,8 +42,10 @@ cd ~
 git clone https://github.com/void-linux/void-packages.git
 cd void-packages
 ./xbps-src binary-bootstrap
+echo XBPS_ALLOW_RESTRICTED=yes >> etc/conf
 
-./xbps-src pkg spotify discord
+./xbps-src pkg spotify
+xi spotify
 
 cd ~
 
