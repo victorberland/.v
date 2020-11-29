@@ -14,19 +14,15 @@ sudo xbps-install -Suy \
 	mesa-vulkan-intel intel-video-accel \
 	os-prober \
 	feh \
-	acpi \
-	upower \
-	font-inconsolata-otf \
-	font-awesome
-	alsa-utils pulseaudio \
-	ConsoleKit2 \
+	acpi upower cronie \
+	font-inconsolata-otf font-awesome \
+	alsa-utils \
 	tmux \
 	nodejs \
 	docker docker-compose \
-	filezilla \
 	timewarrior \
 	nextcloud-client qtkeychain-qt5 \
-	firefox icecat thunderbird \
+	firefox thunderbird \
 	keepassxc \
 	scrot neofetch ffmpeg lm_sensors \
 	vlc cmus \
@@ -36,8 +32,7 @@ sudo xbps-install -Suy \
 	stow
 
 
-cd ~
-
+cd $HOME
 
 git clone https://github.com/void-linux/void-packages.git
 cd void-packages
@@ -45,9 +40,11 @@ cd void-packages
 echo XBPS_ALLOW_RESTRICTED=yes >> etc/conf
 
 ./xbps-src pkg spotify
-xi spotify
+./xbps-src pkg discord
+xi -y spotify
+xi -y discord
 
-cd ~
+cd $HOME
 
 
 setxkbmap no
@@ -56,8 +53,9 @@ setxkbmap no
 # audio
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
-sudo ln -s /etc/sv/cgmanager /var/service/
-sudo ln -s /etc/sv/consolekit /var/service/
+sudo ln -s /etc/sv/cronie /var/service/
+#sudo ln -s /etc/sv/cgmanager /var/service/
+#sudo ln -s /etc/sv/consolekit /var/service/
 
 
 
@@ -74,7 +72,6 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 
 # div
 cd ~/.v
-chsh -s /bin/zsh
 stow v
 
 
