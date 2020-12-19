@@ -74,7 +74,7 @@ alias volmin='amixer -q sset Master 5%-'
 alias volplus='amixer -q sset Master 5%+'
 alias untar='tar -zxvf'
 alias webcam='guvcview'
-alias r='ranger'
+alias f='fff'
 
 # alias stripe='docker run --rm -it stripe/stripe-cli'
 alias stripe='docker run -it stripe/stripe-cli'

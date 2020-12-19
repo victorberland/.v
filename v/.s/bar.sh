@@ -9,7 +9,8 @@ getPower() {
 getVolume() {
 	echo ""
 	#amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]'
-	amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]%'
+	#amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]%'
+	amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'
 }
 getDate() {
 	currentTime=`date +"%d-%m %H:%M"`

@@ -9,14 +9,14 @@ sudo xbps-install -Suy \
 	wget \
 	zsh \
 	htop \
-	base-devel xtools \
+	base-devel xtools dunst \
 	libX11-devel libXft-devel libXinerama-devel libXrandr-devel xorg xterm pango xbindkeys \
 	mesa-vulkan-intel intel-video-accel \
 	os-prober \
 	feh \
 	acpi upower cronie \
 	font-inconsolata-otf font-awesome \
-	alsa-utils \
+	alsa-utils pulseaudio alsa-plugins-pulseaudio \
 	tmux \
 	nodejs \
 	docker docker-compose \
@@ -25,9 +25,9 @@ sudo xbps-install -Suy \
 	firefox thunderbird \
 	keepassxc \
 	scrot neofetch ffmpeg lm_sensors \
-	vlc cmus \
+	mpv cmus \
 	NetworkManager \
-	ranger w3m-img \
+	fff \
 	libreoffice \
 	stow
 
@@ -50,10 +50,11 @@ cd $HOME
 setxkbmap no
 
 
-# audio
+# service
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
+sudo ln -s /etc/sv/dunst /var/service/
 #sudo ln -s /etc/sv/cgmanager /var/service/
 #sudo ln -s /etc/sv/consolekit /var/service/
 
