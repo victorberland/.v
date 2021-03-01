@@ -49,13 +49,17 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 #
-export DOKKU_HOST=x.v4.is
+
+
+# fff
+export FFF_FAV1=~/o
+export FFF_FAV2=~/v
+export FFF_FAV3=~/.v
+
 
 # alias
 alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
-alias tempus='~/tempus/tempus'
 alias serve='browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000'
-alias dokku='$HOME/.dokku/contrib/dokku_client.sh'
 
 alias status='
 	echo "---- V ----"
@@ -69,15 +73,21 @@ alias status='
 alias xi='sudo xbps-install -Su'
 alias xr='sudo xbps-remove -R'
 
-alias sleep='sudo sv down NetworkManager && sudo pm-suspend && slock && sudo sv up NetworkManager'
-alias volmin='amixer -q sset Master 5%-'
-alias volplus='amixer -q sset Master 5%+'
 alias untar='tar -zxvf'
 alias webcam='guvcview'
 alias f='fff'
+
+alias wp='docker-compose run --rm cli'
 
 # alias stripe='docker run --rm -it stripe/stripe-cli'
 alias stripe='docker run -it stripe/stripe-cli'
 
 export PATH="$PATH:$HOME/.npm-packages/bin"
+export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

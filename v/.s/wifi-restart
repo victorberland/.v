@@ -1,8 +1,0 @@
-#!/bin/bash
-
-wifi="$(nmcli r wifi)"
-if [ "$wifi" == "enabled" ]; then
-        nmcli r wifi off
-else
-        nmcli r wifi on
-fi

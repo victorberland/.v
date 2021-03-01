@@ -18,13 +18,13 @@ sudo xbps-install -Suy \
 	font-inconsolata-otf font-awesome \
 	alsa-utils pulseaudio alsa-plugins-pulseaudio \
 	tmux \
-	nodejs \
+	nodejs rsync \
 	docker docker-compose \
 	timewarrior \
 	nextcloud-client qtkeychain-qt5 \
 	firefox thunderbird \
 	keepassxc \
-	scrot neofetch ffmpeg lm_sensors \
+	scrot neofetch ffmpeg lm_sensors mons \
 	mpv cmus \
 	NetworkManager \
 	fff \
@@ -55,8 +55,7 @@ sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/dunst /var/service/
-#sudo ln -s /etc/sv/cgmanager /var/service/
-#sudo ln -s /etc/sv/consolekit /var/service/
+sudo ln -s /etc/sv/docker /var/service/
 
 
 

@@ -5,7 +5,8 @@
 call plug#begin()
 Plug 'posva/vim-vue'
 Plug 'junegunn/goyo.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -65,8 +66,9 @@ nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <F4> :Texplore<cr>
 nnoremap <F3> :Goyo<cr>
+map ; :Files<CR>
 
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePre * %s/\s\+$//e
