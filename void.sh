@@ -14,7 +14,7 @@ sudo xbps-install -Suy \
 	mesa-vulkan-intel intel-video-accel \
 	os-prober \
 	feh \
-	acpi upower cronie \
+	acpi upower tlp cronie \
 	font-inconsolata-otf font-awesome \
 	alsa-utils pulseaudio alsa-plugins-pulseaudio \
 	tmux \
@@ -53,6 +53,7 @@ setxkbmap no
 # service
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
+sudo ln -s /etc/sv/tlp /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/dunst /var/service/
 sudo ln -s /etc/sv/docker /var/service/

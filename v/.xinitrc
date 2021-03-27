@@ -1,12 +1,12 @@
 xrdb $HOME/.Xresources
 start-pulseaudio-x11 &
-setxkbmap no 
+setxkbmap no
 xbindkeys
 
 alsactl --file ~/.v/asound.state restore
 
 while true; do
-	sleep 1
+	sleep 1s
 	sh ~/.s/bar.sh
 done &
 
