@@ -79,6 +79,8 @@ alias f='fff'
 
 alias wp='docker-compose run --rm cli'
 
+alias composer='docker run --rm --interactive --tty --volume $PWD:/app composer'
+
 # alias stripe='docker run --rm -it stripe/stripe-cli'
 alias stripe='docker run -it stripe/stripe-cli'
 
@@ -86,6 +88,7 @@ export PATH="$PATH:$HOME/.npm-packages/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.local/lib/python3.9/site-packages"
 
  export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use

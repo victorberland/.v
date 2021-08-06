@@ -10,3 +10,5 @@
 	pusha = !git remote | xargs -L1 git push --all
 [credential]
 	helper = store
+[pull]
+	rebase = false

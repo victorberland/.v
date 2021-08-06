@@ -11,6 +11,7 @@ Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'editorconfig/editorconfig-vim'
 "Plug 'Yggdroot/indentLine'
 call plug#end()
 

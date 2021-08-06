@@ -23,7 +23,11 @@
 
 # Screenshot
 "scrot && notify-send '<3'"
-	XF86Switch_VT_8
+	F9
+
+# Monitor
+"monitor"
+	F8
 
 # Sleep
 "sudo zzz && slock"
