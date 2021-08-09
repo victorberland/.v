@@ -23,11 +23,11 @@
 
 # Screenshot
 "scrot && notify-send '<3'"
-	F9
+	F8
 
 # Monitor
 "monitor"
-	F8
+	F6
 
 # Sleep
 "sudo zzz && slock"
