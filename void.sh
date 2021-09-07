@@ -19,9 +19,8 @@ sudo xbps-install -Suy \
 	alsa-utils pulseaudio alsa-plugins-pulseaudio \
 	tmux \
 	nodejs rsync \
-	docker docker-compose \
-	timewarrior \
-	nextcloud-client qtkeychain-qt5 \
+	docker docker-compose ripgrep \
+	syncthing \
 	firefox thunderbird \
 	keepassxc \
 	scrot neofetch ffmpeg lm_sensors mons \
@@ -50,13 +49,14 @@ cd $HOME
 setxkbmap no
 
 
-# service
+# enable service
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/tlp /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/dunst /var/service/
 sudo ln -s /etc/sv/docker /var/service/
+
 
 
 

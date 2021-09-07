@@ -12,6 +12,8 @@ Plug 'tomtom/tcomment_vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
+Plug 'AndrewRadev/tagalong.vim'
+Plug 'mattn/emmet-vim'
 "Plug 'Yggdroot/indentLine'
 call plug#end()
 
@@ -68,7 +70,8 @@ nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <F4> :Texplore<cr>
 nnoremap <F3> :Goyo<cr>
-map ; :Files<CR>
+map , :Files<CR>
+map ; :Rg<CR>
 
 
 

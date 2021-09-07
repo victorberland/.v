@@ -15,4 +15,19 @@ Vim: `:PlugInstall`
 
 
 
+```
+# /etc/sv/syncthing/run
+
+
+#!/bin/sh
+
+export USERNAME=v
+export HOME="/home/$USERNAME"
+export SYNCTHING="/bin/syncthing"
+
+exec 2>&1
+exec chpst -u "$USERNAME" "$SYNCTHING" serve --logflags 0
+```
+
+
 Matter Grub: https://github.com/mateosss/matter
