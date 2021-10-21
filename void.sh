@@ -26,7 +26,7 @@ sudo xbps-install -Suy \
 	scrot neofetch ffmpeg lm_sensors mons \
 	mpv cmus \
 	NetworkManager \
-	fff \
+	ripgrep \
 	libreoffice \
 	stow
 

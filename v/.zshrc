@@ -81,6 +81,10 @@ alias wp='docker-compose run --rm cli'
 
 alias composer='docker run --rm --interactive --tty --volume $PWD:/app composer'
 
+alias copy='xclip -sel c <'
+
+alias mirror='ffmpeg -video_size 3840x2160 -framerate 60 -f x11grab -i :0.0 -c:v libx264rgb -crf 0 -preset ultrafast -color_range 2 -f matroska - | ffplay -'
+
 # alias stripe='docker run --rm -it stripe/stripe-cli'
 alias stripe='docker run -it stripe/stripe-cli'
 
