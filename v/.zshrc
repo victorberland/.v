@@ -77,7 +77,11 @@ alias untar='tar -zxvf'
 alias webcam='guvcview'
 alias f='fff'
 
-alias wp='docker-compose run --rm cli'
+# alias nvim='vim'
+
+alias notat='vim -p /home/v/o/n/*'
+
+alias wp='docker-compose run --rm cli wp'
 
 alias composer='docker run --rm --interactive --tty --volume $PWD:/app composer'
 
@@ -93,6 +97,14 @@ export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.local/lib/python3.9/site-packages"
+
+
+export PATH="$PATH:$HOME/go/bin"
+# export GOROOT=$HOME/go
+# export GOPATH=$HOME/go/bin
+
+export PATH=$PATH:/usr/local/go/bin
+
 
  export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
