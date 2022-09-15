@@ -79,15 +79,19 @@ alias f='fff'
 
 # alias nvim='vim'
 
-alias notat='vim -p /home/v/o/n/*'
+alias notat='vim -p $HOME/o/n/*'
 
-alias wp='docker-compose run --rm cli wp'
-
-alias composer='docker run --rm --interactive --tty --volume $PWD:/app composer'
+#alias wp='docker-compose run --rm cli wp'
 
 alias copy='xclip -sel c <'
 
 alias mirror='ffmpeg -video_size 3840x2160 -framerate 60 -f x11grab -i :0.0 -c:v libx264rgb -crf 0 -preset ultrafast -color_range 2 -f matroska - | ffplay -'
+
+alias copywpe='cat ~/.ssh/wpengine_rsa.pub | pbcopy'
+
+alias restartcalendar='launchctl stop com.apple.CalendarAgent && launchctl start com.apple.CalendarAgent'
+
+alias vim='nvim'
 
 # alias stripe='docker run --rm -it stripe/stripe-cli'
 alias stripe='docker run -it stripe/stripe-cli'
@@ -104,7 +108,12 @@ export PATH="$PATH:$HOME/go/bin"
 # export GOPATH=$HOME/go/bin
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/opt/homebrew/bin
 
 
- export NVM_DIR=~/.nvm
- [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+eval "$(pyenv init --path)"
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
