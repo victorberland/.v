@@ -58,7 +58,7 @@ export FFF_FAV3=~/.v
 
 
 # alias
-alias ytdl='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
+alias ytdl='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 alias serve='browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000'
 
 alias status='
