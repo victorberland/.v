@@ -16,6 +16,7 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'mattn/emmet-vim'
 Plug 'skwp/greplace.vim'
 Plug 'github/copilot.vim'
+Plug 'rose-pine/neovim'
 " Plug 'sbdchd/neoformat'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
@@ -68,10 +69,10 @@ let html_no_rendering=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-" colo pablo
+set termguicolors
 set background=dark
-" colorscheme zellner
-hi Normal ctermfg=252 ctermbg=Black
+colorscheme rose-pine
+highlight Normal guibg=black
 
 hi StatusLine ctermbg=0
 hi TabLineFill ctermfg=0
