@@ -93,9 +93,6 @@ alias restartcalendar='launchctl stop com.apple.CalendarAgent && launchctl start
 
 alias vim='nvim'
 
-# alias stripe='docker run --rm -it stripe/stripe-cli'
-alias stripe='docker run -it stripe/stripe-cli'
-
 export PATH="$PATH:$HOME/.npm-packages/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
