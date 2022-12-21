@@ -111,6 +111,6 @@ export PATH=$PATH:/opt/homebrew/bin
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-eval "$(pyenv init --path)"
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
