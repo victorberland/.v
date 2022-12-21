@@ -68,9 +68,10 @@ let html_no_rendering=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-colo pablo
+" colo pablo
 set background=dark
-colorscheme zellner
+" colorscheme zellner
+hi Normal ctermfg=252 ctermbg=Black
 
 hi StatusLine ctermbg=0
 hi TabLineFill ctermfg=0
