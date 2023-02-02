@@ -22,8 +22,8 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html', 'php'] }
 "Plug 'Yggdroot/indentLine'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set noswapfile
@@ -57,7 +57,7 @@ set tabpagemax=100
 set guicursor=n-v-c-i:block
 
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0
+let g:indent_guides_auto_colors = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
