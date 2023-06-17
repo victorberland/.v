@@ -11,8 +11,3 @@
 	default = current
 [init]
 	defaultBranch = master
-
-[includeIf "gitdir:~/a/"]
-	path = .gitconfig-appex
-# [includeIf "gitdir:~/v/"]
-# 	path = .gitconfig-victor
