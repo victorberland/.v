@@ -1,4 +1,4 @@
-env:
+ev:
   TERM: xterm-256color
 
 window:
@@ -58,5 +58,3 @@ hints:
       mouse:
           enabled: true
           mods: Command
-
-alt_send_esc: false
