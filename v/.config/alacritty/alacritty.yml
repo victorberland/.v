@@ -6,6 +6,7 @@ window:
   padding:
    x: 30
    y: 30
+  option_as_alt: Both
 
 scrolling:
   history: 0
