@@ -17,6 +17,7 @@ Plug 'mattn/emmet-vim'
 Plug 'skwp/greplace.vim'
 Plug 'github/copilot.vim'
 Plug 'rose-pine/neovim'
+Plug 'skywind3000/asyncrun.vim'
 " Plug 'sbdchd/neoformat'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
@@ -71,8 +72,21 @@ let html_no_rendering=1
 syntax on
 set termguicolors
 set background=dark
+
+function! s:tweak_colors()
+	" highlight Normal guibg=black
+	" highlight nonText guibg=black
+	autocmd ColorScheme * highlight Normal guibg=NONE
+endfunction
+
+" run tweak_colors() on neovim startup
+try
+	call s:tweak_colors()
+catch
+endtry
+
+autocmd! ColorScheme rose-pine call s:tweak_colors()
 colorscheme rose-pine
-highlight Normal guibg=black
 
 hi StatusLine ctermbg=0
 hi TabLineFill ctermfg=0
