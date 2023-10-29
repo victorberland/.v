@@ -18,6 +18,8 @@ Plug 'skwp/greplace.vim'
 Plug 'github/copilot.vim'
 Plug 'rose-pine/neovim'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'voldikss/vim-floaterm'
+Plug 'tpope/vim-fugitive'
 " Plug 'sbdchd/neoformat'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
@@ -50,6 +52,7 @@ set ruler
 filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
+set expandtab
 "set autoindent
 set showmatch
 set backspace=indent,eol,start
