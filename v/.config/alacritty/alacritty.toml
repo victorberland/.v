@@ -1,0 +1,98 @@
+[colors.bright]
+black = "0x1d1d1d"
+blue = "0xa0b9d8"
+cyan = "0x7dc2c7"
+green = "0x92c47e"
+magenta = "0xc6aed7"
+red = "0xfe9f7c"
+white = "0xfffefe"
+yellow = "0xd2b45f"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x8296b0"
+cyan = "0x659ea2"
+green = "0x76a065"
+magenta = "0xa18daf"
+red = "0xcf8164"
+white = "0xb5b4c9"
+yellow = "0xab924c"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xb5b4c9"
+
+[ev]
+TERM = "xterm-256color"
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "Inconsolata"
+style = "Bold"
+
+[font.bold_italic]
+family = "Inconsolata"
+style = "Regular Italic"
+
+[font.italic]
+family = "Inconsolata"
+style = "Italic"
+
+[font.normal]
+family = "Inconsolata"
+style = "Regular"
+
+[font.offset]
+y = 5
+
+[[hints.enabled]]
+command = "open"
+post_processing = true
+regex = "(magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "["
+key = "LBracket"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "]"
+key = "RBracket"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "{"
+key = "LBracket"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "}"
+key = "RBracket"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "|"
+key = "Backslash"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = '\'
+key = "Backslash"
+mods = "Alt|Shift"
+
+[scrolling]
+history = 0
+
+[window]
+decorations = "Transparent"
+option_as_alt = "Both"
+
+[window.padding]
+x = 30
+y = 30
