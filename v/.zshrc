@@ -7,7 +7,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
-export TERM=xterm-256color
+export TERM=alacritty
 
 # alias
 alias ytdl='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
