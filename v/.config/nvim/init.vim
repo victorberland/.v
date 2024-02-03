@@ -13,7 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'mattn/emmet-vim'
@@ -24,6 +24,7 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-fugitive'
 " Plug 'sbdchd/neoformat'
+
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html', 'php'] }
