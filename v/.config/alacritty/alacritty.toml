@@ -1,48 +1,54 @@
-[colors.bright]
-black = "0x1d1d1d"
-blue = "0xa0b9d8"
-cyan = "0x7dc2c7"
-green = "0x92c47e"
-magenta = "0xc6aed7"
-red = "0xfe9f7c"
-white = "0xfffefe"
-yellow = "0xd2b45f"
+[window]
+decorations = "Transparent"
+option_as_alt = "None"
+padding.x = 30
+padding.y = 30
 
-[colors.normal]
-black = "0x000000"
-blue = "0x8296b0"
-cyan = "0x659ea2"
-green = "0x76a065"
-magenta = "0xa18daf"
-red = "0xcf8164"
-white = "0xb5b4c9"
-yellow = "0xab924c"
 
-[colors.primary]
-background = "0x000000"
-foreground = "0xb5b4c9"
+[scrolling]
+history = 0
+
+
+[colors]
+bright.black = "0x1d1d1d"
+bright.blue = "0xa0b9d8"
+bright.cyan = "0x7dc2c7"
+bright.green = "0x92c47e"
+bright.magenta = "0xc6aed7"
+bright.red = "0xfe9f7c"
+bright.white = "0xfffefe"
+bright.yellow = "0xd2b45f"
+
+normal.black = "0x000000"
+normal.blue = "0x8296b0"
+normal.cyan = "0x659ea2"
+normal.green = "0x76a065"
+normal.magenta = "0xa18daf"
+normal.red = "0xcf8164"
+normal.white = "0xb5b4c9"
+normal.yellow = "0xab924c"
+
+primary.background = "0x000000"
+primary.foreground = "0xb5b4c9"
+
 
 [font]
 size = 16.0
 
-[font.bold]
-family = "Inconsolata"
-style = "Bold"
+bold.family = "Inconsolata"
+bold.style = "Bold"
 
-[font.bold_italic]
-family = "Inconsolata"
-style = "Regular Italic"
+bold_italic.family = "Inconsolata"
+bold_italic.style = "Regular Italic"
 
-[font.italic]
-family = "Inconsolata"
-style = "Italic"
+italic.family = "Inconsolata"
+italic.style = "Italic"
 
-[font.normal]
-family = "Inconsolata"
-style = "Regular"
+normal.family = "Inconsolata"
+normal.style = "Regular"
 
-[font.offset]
-y = 5
+offset.y = 5
+
 
 [[hints.enabled]]
 command = "open"
@@ -52,44 +58,3 @@ regex = "(magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp
 [hints.enabled.mouse]
 enabled = true
 mods = "Command"
-
-[[keyboard.bindings]]
-chars = "["
-key = "LBracket"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "]"
-key = "RBracket"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "{"
-key = "LBracket"
-mods = "Alt|Shift"
-
-[[keyboard.bindings]]
-chars = "}"
-key = "RBracket"
-mods = "Alt|Shift"
-
-[[keyboard.bindings]]
-chars = "|"
-key = "Backslash"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = '\'
-key = "Backslash"
-mods = "Alt|Shift"
-
-[scrolling]
-history = 0
-
-[window]
-decorations = "Transparent"
-option_as_alt = "Both"
-
-[window.padding]
-x = 30
-y = 30
